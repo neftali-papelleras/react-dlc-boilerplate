@@ -1,9 +1,9 @@
 // LAYOUT
-import PublicLayout from './layouts/public';
-import PrivateLayout from './layouts/private';
+import PublicLayout from './layouts/Public';
+import PrivateLayout from './layouts/Private';
 
 // PAGES
-import SignIn from './pages/SignIn';
+import HomePage from './pages/HomePage';
 
 const routes = [
   {
@@ -15,8 +15,8 @@ const routes = [
     element: <PublicLayout />,
     children: [
       {
-        path: '/login',
-        element: <SignIn />,
+        path: '/',
+        element: <HomePage />,
       },
     ],
   },
